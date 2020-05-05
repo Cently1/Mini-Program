@@ -1,0 +1,9 @@
+<!--Mini Program/index/index.wxml-->
+<view class="indexContainer">
+	<image src="{{userInfo.avatarUrl}}" class="avatar"></image>
+	<button open-type="getUserInfo" bindgetuserinfo='handleGetUserInfo' style='display:{{isShow?"block":"none"}}'>获取用户登录信息</button>
+	<text class="userName">hello {{userInfo.nickName}}</text>
+	<view class="goStudy" catchtap="handleClick">
+  <text>开启小程序之旅</text>
+  </view>
+</view>

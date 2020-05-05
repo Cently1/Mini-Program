@@ -1,0 +1,18 @@
+<!--Mini Program/pages/template/template.wxml-->
+<template name='listTmp'>
+	<view class='tmpCotainer'> 
+		<view class="avatar_date">
+			<image src="https://halen-blog-1252760404.cos.ap-chengdu.myqcloud.com/img/20200425104256.jpg"></image>
+			<text>cently 5 2020</text>
+		</view>
+		<text class="company">{{title}}</text>
+		<image src="{{detail_img}}" class="contentImg"></image>
+		<view class="content">{{detail_content}}</view>
+		<view class='collection_love'>
+    <image src="https://halen-blog-1252760404.cos.ap-chengdu.myqcloud.com/img/20200504112507.png"></image>
+    <text>{{love_count}}</text>
+    <image src="https://halen-blog-1252760404.cos.ap-chengdu.myqcloud.com/img/20200504104753.png"></image>
+    <text>{{attention_count}}</text>
+    </view>
+	</view>
+</template>

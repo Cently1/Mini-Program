@@ -1,0 +1,26 @@
+<!--Mini Program/pages/list/list.wxml-->
+<import src="/Mini Program/pages/template/list-template.wxml" />
+<view>
+	<swiper indicator-dots="true" indicator-color='gold' indicator-active-color='red' catchtap="carouseToDetail">
+		<swiper-item>
+			<image data-index="0" src="https://halen-blog-1252760404.cos.ap-chengdu.myqcloud.com/img/20200503223554.jpg"></image>
+		</swiper-item>
+		<swiper-item>
+			<image data-index="1" src="https://halen-blog-1252760404.cos.ap-chengdu.myqcloud.com/img/20200503223556.jpg"></image>
+		</swiper-item>
+		<swiper-item>
+			<image data-index="2" src="https://halen-blog-1252760404.cos.ap-chengdu.myqcloud.com/img/20200503223557.jpg"></image>
+		</swiper-item>
+		<swiper-item>
+			<image data-index="3" src="https://halen-blog-1252760404.cos.ap-chengdu.myqcloud.com/img/20200503225055.jpg"></image>
+		</swiper-item>
+		<swiper-item>
+			<image data-index="4" src="https://halen-blog-1252760404.cos.ap-chengdu.myqcloud.com/img/20200503224838.jpg"></image>
+		</swiper-item>
+	</swiper>
+	<block wx:for='{{listArr}}'  wx:key='index'>
+		<view catchtap="toDetail" data-index='{{index}}'>
+			<template is='listTmp' data='{{...item}}'/>
+		</view>
+	</block> 
+</view>

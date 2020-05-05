@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "Mini Program/pages/index/index",
+    "Mini Program/pages/movies/movies",
+    "Mini Program/pages/list/list",
+    "Mini Program/pages/detail/detail",
+    "Mini Program/pages/movieDetail/movieDetail"
+  ],
+  "sitemapLocation": "sitemap.json",
+  "requiredBackgroundModes": [
+    "audio",
+    "location"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#34495E",
+    "navigationBarTitleText": "Welcome to here"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "Mini Program/pages/list/list",
+        "text": "文与字",
+        "iconPath": "/datas/images/yuedu.png",
+        "selectedIconPath": "/datas/images/yuedu_hl.png"
+      },
+      {
+        "pagePath": "Mini Program/pages/movies/movies",
+        "text": "电影频道",
+        "iconPath": "/datas/images/yuedu.png",
+        "selectedIconPath": "/datas/images/dianying_hl.png"
+      }
+    ]
+  }
+}

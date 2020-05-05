@@ -1,0 +1,22 @@
+<!--Mini Program/pages/detail/detail.wxml-->
+<view class='detailContainer'>
+	<image class='headImg' src='{{isMusicPlay?detailObj.music.coverImgUrl:detailObj.detail_img}}'></image>
+	<image class="musicImg" catchtap="headMusicPlay" src='{{isMusicPlay?"https://halen-blog-1252760404.cos.ap-chengdu.myqcloud.com/img/20200505115100.png":"https://halen-blog-1252760404.cos.ap-chengdu.myqcloud.com/img/20200505115104.png"}}'></image>
+	<view class='avatar_date'>
+		<image src='{{detailObj.avatar}}'></image>
+		<text>{{detailObj.author}}</text>
+		<text>发布于</text>
+		<text>{{detailObj.date}}</text>
+	</view>
+	<text class="company">{{detailObj.title}}</text>
+	<view class="collection_share_container">
+		<view class="collection_share">
+			<image wx:if='{{!isCollected}}' catchtap="handleCollection" src="{{detailObj.detail_love_image1}}"></image>
+			<image wx:if='{{isCollected}}' catchtap="handleCollection" src="{{detailObj.detail_love_image3}}"></image>
+			<image src="{{detailObj.detail_love_image2}}" catchtap="handleShare"></image>
+		</view>
+		<view class="line"></view>
+	</view>
+	<button open-type="share">转发此文章</button>
+	<text class="content">{{detailObj.detail_content}}</text>
+</view>
